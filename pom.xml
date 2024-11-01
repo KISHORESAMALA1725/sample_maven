@@ -28,18 +28,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <distributionManagement>
-      <repository>
-          <id>nexus</id>  
-          <name>Release Repos</name>
-          <url>ttp://34.125.83.173:8081/repository/first-release/</url>
-       </repository>
-      <snapshotRepository>
-          <id>nexus</id>
-          <name>Snapshot Repos</name>
-          <url>http://34.125.83.173:8081/repository/first-snapshot/</url>
-      </snapshotRepository>
-  </distributionManagement>
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
@@ -56,7 +44,7 @@
         <plugin>
           <groupId>org.sonarsource.scanner.maven</groupId>
           <artifactId>sonar-maven-plugin</artifactId>
-          <version>4.0.0</version>
+          <version>3.8.0.2131</version>
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
