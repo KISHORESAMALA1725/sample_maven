@@ -13,6 +13,7 @@
   <url>http://www.example.com</url>
 
   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
@@ -25,6 +26,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+      <repository>
+          <id>nexus</id>  
+          <name>SPSCOREP-RELEASE</name>
+          <url>http://34.47.133.214:8081/repository/SPSCOREP-RELEASE/</url>
+       </repository>
+      <snapshotRepository>
+          <id>nexus</id>
+          <name>SPSCORES-SNAPSHOP</name>
+          <url>http://34.47.133.214:8081/repository/SPSCORES-SNAPSHOT/</url>
+      </snapshotRepository>
+  </distributionManagement>
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
