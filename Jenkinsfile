@@ -1,4 +1,4 @@
-@Library("com.i27academy.slb@main") _
-firstPipeline(
+@Library("my-sharded-lib@main") _
+mvnpipeline(
     appName:  'cart-ms'
 )
